@@ -76,7 +76,7 @@ Create a single pull request containing all plugin updates:
 
 ### Grouped PRs for Frontend and Backend Updates
 
-Create one PR for an exact frontend/backend package pair, such as `pluginabc` and `pluginabc-backend`, when both have updates in the same run and use the same tag prefix. Each package keeps its own target version; the versions can differ. Packages without a matching update get individual PRs.
+Changing the `update-pr-strategy` field from `separate` to `grouped` results in creating one PR for an exact frontend/backend package pair, such as `pluginabc` and `pluginabc-backend`, when both have updates in the same run and use the same tag prefix. Each package keeps its own target version; the versions can differ. Packages without a matching update get individual PRs.
 
 ```yaml
 - name: Update RHDH plugins
